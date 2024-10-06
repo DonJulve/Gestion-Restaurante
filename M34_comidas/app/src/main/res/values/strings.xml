@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">M34_comidas</string>
+    <string name="hint_title">Type title ...</string>
+    <string name="hint_body">Type body ...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Note not saved because title is empty.</string>
+    <string name="add_note">Add plato</string>
+    <string name="plato_delete">Eliminar plato</string>
+    <string name="plato_edit">Editar plato</string>
+    <string name="pedido_delete">Eliminar pedido</string>
+    <string name="pedido_edit">Editar pedido</string>
+    <string name="title">Title</string>
+    <string name="body">Body</string>
+    <string name="title_activity_eliminar_plato">eliminarPlato</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_eliminar_pedido">Eliminar Pedido</string>
+</resources>

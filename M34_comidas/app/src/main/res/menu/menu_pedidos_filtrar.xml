@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/sinFiltro"
+        android:title="Sin Filtro"/>
+
+    <item android:id="@+id/solicitado"
+        android:title="Solicitado"/>
+
+    <item android:id="@+id/preparado"
+        android:title="Preparado"/>
+
+    <item android:id="@+id/recogido"
+        android:title="Recogido"/>
+
+</menu>

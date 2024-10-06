@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/texto_principal"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="32dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="Crear plato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_principal">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/big_padding"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Inserte nombre"
+            android:inputType="textAutoComplete"
+            android:minHeight="@dimen/min_height"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="408dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripcion" />
+
+        <EditText
+            android:id="@+id/insertar_descripcion"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Inserte descripcion"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="411dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="155dp"
+            android:layout_height="59dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571">
+
+            <TextView
+                android:id="@+id/precio2"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Precio:"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="568dp" />
+
+            <EditText
+                android:id="@+id/escribir_precio"
+                android:layout_width="69dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/big_padding"
+                android:fontFamily="sans-serif-light"
+                android:hint="Inserte precio"
+                android:inputType="textAutoComplete"
+                android:minHeight="@dimen/min_height"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="107dp"
+            android:layout_height="132dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="36dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/categoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/estado_elegir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:scaleX="1"
+                android:scaleY="1">
+
+                <RadioButton
+                    android:id="@+id/primero"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Primero" />
+
+                <RadioButton
+                    android:id="@+id/segundo"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Segundo" />
+
+                <RadioButton
+                    android:id="@+id/tercero"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Tercero" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre2"
+        app:layout_constraintVertical_bias="0.678" />
+
+    <Button
+        android:id="@+id/confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toEndOf="@+id/cancelar"
+        app:layout_constraintTop_toBottomOf="@+id/categoria"
+        app:layout_constraintVertical_bias="0.413" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

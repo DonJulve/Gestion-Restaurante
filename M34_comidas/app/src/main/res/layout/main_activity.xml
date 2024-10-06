@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewer"
+        android:layout_width="406dp"
+        android:layout_height="666dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tab"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_platos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLATOS" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_pedidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PEDIDOS" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TESTS" />
+    </com.google.android.material.tabs.TabLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
